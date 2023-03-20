@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { addContact } from "../redux/contactSlice";
 import { getVisibleFilter } from "../redux/selectors";
-// import PropTypes from 'prop-types';
+
 
 export default function Phonebook () {
     const initialState = {
@@ -84,11 +84,6 @@ export default function Phonebook () {
     </div>
   );
 };
-
-
-// Phonebook.propTypes = {
-//     onSubmit: PropTypes.func.isRequired,
-// }
 
 
 

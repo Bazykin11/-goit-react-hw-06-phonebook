@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-// import PropTypes from 'prop-types';
+
 import { useDispatch, useSelector } from "react-redux";
 import { getVisibleFilter } from "../redux/selectors";
 import { removeContact } from "../redux/contactSlice";
-// import toast from "react-hot-toast";
 
-export const ContactList = ({ DeleteContact }) => {
+
+export const ContactList = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getVisibleFilter);
 
@@ -30,16 +30,7 @@ export const ContactList = ({ DeleteContact }) => {
   );
 };
 
-// ContactList.propTypes = {
-//   visibleFilter: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     }).isRequired
-//   ),
-//   onDeleteContact: PropTypes.func,
-// };
+
 
 /////////////////////////////// STYLE /////////////////////////
 

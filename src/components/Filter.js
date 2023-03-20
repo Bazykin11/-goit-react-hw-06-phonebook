@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-// import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from "react-redux";
 import { setFilter } from "../redux/filterSlice"
 import { getFilter } from "../redux/selectors";
@@ -31,9 +30,6 @@ export const Filter = () => {
 
 export default Filter;
 
-// Filter.propTypes = {
-//   onChange: PropTypes.func.isRequired,
-// };
 
 /////////////////////////////// STYLE /////////////////////////
 
